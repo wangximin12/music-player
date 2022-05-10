@@ -1,0 +1,188 @@
+page {
+  color: white;
+  /* padding: 0 60rpx; */
+}
+
+.bg-image,.bg-cover {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  /* 模糊值 */
+  /* filter: blur(5px); */
+}
+
+.bg-cover {
+  background-color: rgba(0, 0, 0, .5);
+  /* 毛玻璃 */
+  backdrop-filter: blur(50px);
+}
+
+.tab{
+  display: flex;
+  font-size: 28rpx;
+  color: #999;
+}
+
+.tab .divider {
+  margin: 0 10rpx;
+}
+
+.tab .active {
+  color: #fff;
+}
+
+.music {
+  height: 100%;
+}
+
+.album::before {
+  content: "";
+  display: block;
+  height: 8%;
+}
+
+.album {
+  display: block;
+  box-sizing: border-box;
+  height: 50%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.album .image {
+  display: block;
+  height: 90%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.info {
+  box-sizing: border-box;
+  display: block;
+  height: 15%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.info .title{
+  box-sizing: border-box;
+  height: 40%;
+  padding: 14rpx;
+  font-size: 50rpx;
+  font-weight: 600;
+}
+
+.info .subtitle {
+  box-sizing: border-box;
+  height: 60%;
+  font-size: 26rpx;
+  padding: 15rpx;
+  margin-top: 10rpx;
+}
+
+.info .subtitle .alias {
+  margin: 20rpx 0;
+}
+
+.music .lyric {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 15%;
+  padding: 0 20rpx;
+}
+
+.music .lyric .lyric-l {
+  font-size: 34rpx;
+  height: 34%;
+  color: #62ce8a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+.music .progress {
+  height: 6%;
+  width: 100%;
+}
+
+.progress .slider {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.progress .time {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  font-size: 22rpx;
+  font-weight: 300;
+  margin: 20rpx auto 0 auto;
+}
+
+.operation {
+  display: flex;
+  height: 13%;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.operation .btn:nth-child(1) {
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.operation .btn:nth-child(5) {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.operation .btn:nth-child(2n) {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.operation .btn:nth-child(3) {
+  width: 130rpx;
+  height: 130rpx;
+}
+
+/* 歌词滚动的样式 */
+.lyric {
+  text-align: center;
+}
+
+.lyric .item {
+  height: 35px;
+  line-height: 35px;
+  font-size: 30rpx;
+  text-align: center;
+  color: #989898;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lyric .item.active {
+  color: #26ce8a;
+  font-size: 34rpx;
+}
+
+.lyric-list {
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width:0; 
+  height:0;
+  color:transparent;
+}

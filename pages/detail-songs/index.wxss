@@ -1,0 +1,104 @@
+page {
+  padding: 0 10rpx;
+}
+
+.song-list {
+  margin-top: 20rpx;
+}
+
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 500rpx;
+}
+
+.header .bg-image {
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
+}
+
+.header .bg-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.header .content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 300rpx;
+}
+
+.header .content .image {
+  position: absolute;
+  top: 70rpx;
+  left: 40rpx;
+  width: 240rpx;
+  height: 240rpx;
+  border-radius: 10rpx;
+  
+}
+
+.header .content .info {
+  position: absolute; 
+  height: 230rpx;
+  top: 70rpx;
+  left: 300rpx;
+  color: #fafafa;
+}
+
+.info .name {
+  padding-left: 20rpx;
+}
+
+.header .content .info .nickName {
+  font-size: 24rpx;
+  margin: 30rpx 20rpx;
+}
+
+.header .content .info .nickName .nickImage{
+  border-radius: 50%;
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+
+.header .content .info .description {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 24rpx;
+  margin-left: 20rpx;
+}
+
+.header .operation {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 200rpx;
+  bottom: 0;
+  color: #fff;
+  font-size: 24rpx;
+}
+
+.header .operation .favor {
+  width: 50rpx;
+  vertical-align: middle;
+}
+
+.header .operation .share {
+  width: 50rpx;
+  vertical-align: middle;
+}

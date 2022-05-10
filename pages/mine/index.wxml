@@ -1,0 +1,30 @@
+<view class="mine">
+	<view class="image">
+		<image src="/assets/images/icons/song.png" class="image-song"></image>
+	</view>
+	<view class="center">
+		<view class="collect">
+			<image src="/assets/images/icons/collect.png" class="icon" mode="heightFix"></image>
+     	<view>收藏</view>
+			<view>11</view>	 
+		</view>
+		<view class="recently">
+			<image src="/assets/images/icons/recently.png" class="icon" mode="heightFix"></image>
+			<view>最近</view>
+			<view>111</view>
+			</view>
+	</view>
+	<view class="bottom">
+		<view class="self-playList">
+      自建歌单
+      <image src="/assets/images/icons/{{arrow}}.png" class="arrow" mode="widthFix" bindtap="handleArrowAction"></image>
+    </view>
+		<view class="icon">
+			<image src="/assets/images/icons/add.png" class="add" mode="widthFix"></image>
+			<image src="/assets/images/icons/set.png" class="set" mode="widthFix"></image>
+		</view>
+	</view>
+  <view wx:if="{{bel}}" class="song">
+    
+  </view>
+</view>

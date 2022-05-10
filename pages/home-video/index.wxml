@@ -1,0 +1,9 @@
+<!-- MV页面 -->
+
+<view class="video">
+  <view wx:for="{{topMVs}}" wx:key="id" class="item">
+    <video-item-v1 item="{{item}}" bindtap="handleVideoItemClick"
+    data-item="{{item}}">
+    </video-item-v1>
+  </view>
+</view>

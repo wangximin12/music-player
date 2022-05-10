@@ -1,0 +1,28 @@
+<view class="nav">
+  <view style="height:{{statusBarHeight}}px"></view>
+  <view class="nav-bar">
+    <view class="left" bindtap="handleLeftClick">
+      <view class="left-slot">
+        <slot name="left"></slot>
+      </view>
+      <view class="left-arrow">
+        <image class="icon"
+               src="/assets/images/icons/left.png"
+               mode="widthFix"
+               >
+        </image> 
+        <image class="rule" src="/assets/images/icons/rule.png" mode="heightFix"></image>
+        <view class="home" bindtap="navToHome">首页</view>
+      </view>
+    </view>
+    <view class="center">
+      <view class="center-slot">
+        <slot name="center"></slot>
+      </view>
+      <view class="center-title">
+        {{title}}
+      </view>
+    </view>
+    <view class="right"></view>
+  </view>
+</view>

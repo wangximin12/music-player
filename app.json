@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/home-music/index",
+    "pages/home-video/index",
+    "pages/detail-video/index",
+    "pages/detail-search/index",
+    "components/area-header/index",
+    "pages/detail-songs/index",
+    "pages/music-player/index",
+    "pages/mine/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WMusic",
+    "navigationBarTextStyle": "black",
+    "initialRenderingCache": "static"
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home-music/index",
+        "text": "Music",
+        "iconPath": "assets/images/tabbar/music_normal.png",
+        "selectedIconPath": "assets/images/tabbar/music_active.png"
+      },
+      {
+        "pagePath": "pages/home-video/index",
+        "text": "MV",
+        "iconPath": "assets/images/tabbar/video_normal.png",
+        "selectedIconPath": "assets/images/tabbar/video_active.png"
+      }, 
+      {
+        "pagePath": "pages/mine/index",
+        "text": "Mine",
+        "iconPath": "assets/images/tabbar/mine_normal.png",
+        "selectedIconPath": "assets/images/tabbar/mine_active.png"
+      }
+    ]
+  }
+}

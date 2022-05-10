@@ -1,0 +1,53 @@
+.nav-bar {
+  display: flex;
+  height: 40px;
+  /* text-align与line-height都是可以继承的,所以写在父元素里就可以 */
+  text-align: center;
+}
+
+.left,
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 40px;
+  width: 220rpx;
+}
+
+.left-arrow {
+  display: flex;
+  align-items: center;
+  line-height: 40px;
+}
+
+.left .left-arrow .icon{
+  width: 50rpx;
+  vertical-align: top;
+  margin-right: -10rpx;
+}
+
+.left .left-arrow .rule {
+  display: inline-block;
+  height: 50rpx;
+}
+
+.left .left-arrow .home {
+  margin-left: -20rpx;
+  padding: 10rpx 20rpx;
+  /* background-color: #f00; */
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.center .center-title {
+  display: none;
+}
+
+.center-slot:empty + .center-title {
+  display: block;
+}

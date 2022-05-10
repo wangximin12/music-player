@@ -1,0 +1,13 @@
+<!--components/song-item-v1/idnex.wxml-->
+<view class="item" bindtap="handleSongItemClick"
+>
+	<image class="image" src="{{item.al.picUrl}}" mode="aspectFill">
+	</image>
+	<view class="countent">
+		<view class="name">{{item.name}}</view>	
+		<view class="source">{{item.ar[0].name}} - {{item.al.name}}</view>
+	</view>
+	<view class="arrow">
+		<image src="/assets/images/icons/right.png" class="icon"></image>
+	</view>
+</view>

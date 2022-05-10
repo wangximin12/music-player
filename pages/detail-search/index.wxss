@@ -1,0 +1,76 @@
+page {
+	padding:50px 20rpx;
+	background-color: rgb(245, 245, 245);
+}
+
+.keywords {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tag {
+	font-size: 28rpx;
+	padding: 10rpx 16rpx;
+	border-radius: 24rpx;
+	background-color: #fff;
+	margin: 10rpx 15rpx;
+}
+
+.keywords .tag:first-child {
+	color: #26ce8a;
+}
+
+.suggest .title {
+	color: rgb(0, 173, 9);
+	margin: 20rpx 0;
+	font-size: 40rpx;
+}
+
+.suggest .list {
+	margin: 20rpx 0;
+	font-size: 30rpx;
+}
+
+.suggest .list .item .rich {
+	display: inline-block;
+}
+
+.suggest .list .image{
+	display: inline-block;
+	width: 60rpx;
+	vertical-align: middle;
+}
+
+/* 搜索结果 */
+.result .title {
+	font-size: 32rpx;
+	color: #26ce8a;
+	margin: 20rpx;
+}
+
+.search {
+	position: fixed;
+	top: 0;
+	left: 20rpx;
+	right: 20rpx;
+	z-index: 1;
+}
+
+.history {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: start
+}
+
+.c-item {
+	padding: 6rpx 3rpx 6rpx 10rpx;
+	background-color: #fff;
+	border-radius: 20rpx;
+	margin: 16rpx;
+}
+
+.c-item .delete {
+	width: 24rpx;
+	vertical-align: top;
+}

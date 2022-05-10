@@ -1,0 +1,56 @@
+/* pages/detail-video/index.wxss */
+.wrapper .player {
+  width: 100%;
+  position: fixed; 
+  top: 1rpx;
+}
+
+.wrapper .player video {
+  width: 100%;
+  position: fixed; 
+  top: 1rpx;
+}
+
+.wrapper .info {
+  margin: 60rpx 0;
+  margin-left: 20rpx;
+  margin-top: 520rpx;
+}
+
+.wrapper .info .name {
+  font-size: 40rpx;
+  font-weight: 700;
+  padding: 6rpx;
+}
+
+.wrapper .info .artisName {
+  padding: 6rpx;
+  font-size: 28rpx;
+  font-weight: 200;
+}
+
+.wrapper .info .playCount {
+  padding: 6rpx;
+  font-size: 28rpx;
+  font-weight: 200;
+}
+
+.wrapper .relate {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 25rpx;
+}
+
+.wrapper .relate .image {
+  width: 35%;
+  border-radius: 10px;
+}
+
+.wrapper .relate .title{
+  width: 60%;
+}
+
+.wrapper .tuijian {
+  margin: 0 0 30rpx 14rpx;
+}
+

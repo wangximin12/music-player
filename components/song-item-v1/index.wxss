@@ -1,0 +1,32 @@
+.item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10rpx 0;
+}
+
+.item .image {
+	width: 140rpx;
+	height: 140rpx;
+}
+
+.item .countent {
+	flex: 1;
+	margin-left: 20rpx;
+}
+
+.item .countent .name {
+	padding: 10rpx 0;
+	font-weight: 300;
+}
+
+.item .countent .source {
+	font-size: 24rpx;
+	padding: 10rpx 0;
+	font-weight: 300;
+}
+
+.item .arrow .icon{
+	width: 50rpx;
+	height: 50rpx;
+}

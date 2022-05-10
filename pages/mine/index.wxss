@@ -1,0 +1,108 @@
+page {
+	padding: 0 20rpx;
+	background-color: #fafafa;
+}
+
+.mine {
+	position: relative;
+}
+
+@keyframes albumRotate {
+  from {
+    transform: rotate(0deg)
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+.mine .image {
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: 20rpx auto 0 auto;
+	width: 500rpx;
+	height: 500rpx;
+	overflow: hidden;
+	border-radius: 50%;
+	animation: albumRotate 10s linear infinite;
+}
+
+.mine .image .image-song {
+	position: absolute;
+	top: -12rpx;
+	left: -12rpx;
+	width: 530rpx;
+	height: 530rpx;
+}
+
+.center {
+	display: flex;
+	width: 620rpx;
+	margin: 20rpx auto 0 auto;
+	border-radius: 30rpx;
+	justify-content: space-evenly;
+	text-align: center;
+	background-color: rgba(199, 199, 199, 0.667);
+	color: #fafafa;
+}
+
+.center .collect {
+	width: 140rpx;
+	height: 180rpx;
+}
+
+.center .collect .icon {
+	height: 80rpx;
+}
+
+.center .recently {
+	width: 140rpx;
+	height: 140rpx;
+}
+
+.center .recently .icon {
+	height: 80rpx;
+}
+
+.bottom {
+	display: flex;
+	justify-content: space-between;
+	margin: 20rpx auto 0 auto;
+	width: 90%;
+	height: 60rpx;
+	line-height: 60rpx;
+	border-radius: 30rpx;
+	padding: 0 20rpx;
+	background-color: rgba(199, 199, 199, 0.667);
+}
+
+.bottom .self-playList {
+  display: flex;
+  align-items: center;
+	font-size: 30rpx;
+	color: #fff;
+}
+
+.bottom .self-playList .arrow {
+  margin-left: 10rpx;
+  width: 44rpx;
+}
+
+.bottom .icon {
+	display: flex;
+	align-items: center;
+}
+
+.bottom .icon .add {
+	width: 44rpx;
+	margin: 0 10rpx;
+}
+
+.bottom .icon .set {
+	width: 48rpx;
+	margin: 0 10rpx;
+}
+
+

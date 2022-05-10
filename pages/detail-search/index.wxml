@@ -1,0 +1,62 @@
+<van-search value="{{searchValue}}"
+						background="#f7f7f7"
+						shape="round"
+						bind:change="handleSearch"
+						bind:search="handleSearchAction"
+						class="search"
+						show-action="{{searchValue}}"
+></van-search>
+
+<!-- 热门搜索 -->
+<view class="hot" wx:if="{{!searchValue.length && !suggestSongs.length}}">
+	<area-header title="热门搜索"
+							 showRight="{{false}}"
+	></area-header>
+	<view class="keywords">
+		<block wx:for="{{hotKeywords}}"
+					 wx:key="first">
+			<view class="tag" bindtap="handleKeyworldItemClick" data-keyword="{{item.first}}">
+			 {{item.first}}
+			</view>
+		</block>
+	</view>
+</view>
+
+<!-- 历史记录 -->
+<view  wx:if="{{!searchValue.length && !suggestSongs.length && isShow}}">
+		<area-header title="历史记录"
+							 showRight="{{false}}"
+		></area-header>
+		<view class="history">
+			<block wx:for="{{newCollect}}" wx:key="*this">
+				<view class="c-item"  bindtap="handleKeyworldItemClick" data-keyword="{{item}}">
+					{{item}}
+					<image class="delete" catchtap="delete" data-index="{{index}}" src="/assets/images/icons/delete.png" mode="widthFix"></image>
+				</view>
+			</block>
+		</view>
+</view>
+
+<!-- 建议搜索 -->
+<view class="suggest" wx:elif="{{!resultSongs.length && suggestSongs.length}}">
+	<view class="title">搜索"{{searchValue}}"</view>
+	<view class="list">
+		<block wx:for="{{suggestSongs}}" wx:key="keyword">
+			<view class="item" 		 bindtap="handleKeyworldItemClick"
+			data-keyword="{{item.keyword}}">
+				<image src="/assets/images/icons/search_icon.png" class="image" mode="widthFix"></image>
+				<rich-text nodes="{{suggestSongsNodes[index]}}" class="rich"></rich-text>
+			</view>
+		</block>
+	</view>
+</view>
+
+<!-- 搜索结果 -->
+<view class="result" wx:elif="{{resultSongs.length}}">
+	<view class="title">最佳匹配</view>
+	<view class="list">
+	  <block wx:for="{{resultSongs}}" wx:key="id">
+		  <song-item-v2 item="{{item}}" index="{{index+1}}"></song-item-v2>
+		</block>
+	</view>
+</view>

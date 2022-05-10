@@ -1,0 +1,39 @@
+/* components/song-item-v2/index.wxss */
+.item {
+	display: flex;
+	height: 80rpx;
+	margin-bottom: 20rpx;
+}
+
+.index {
+	width: 16%;
+	line-height: 80rpx;
+	text-align: center;
+}
+
+.info {
+	width: 84%;
+}
+
+.info .name{
+	padding-left: 10rpx;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.info .source {
+	position: relative;
+	padding: 10rpx;
+	font-size: 22rpx;
+	font-weight: 300;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.info .source .icon {
+	width: 40rpx;
+	vertical-align: middle;
+}

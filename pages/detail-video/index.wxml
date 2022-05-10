@@ -1,0 +1,30 @@
+<!-- MV的详情页 -->
+
+<wxs src="../../utils/format.wxs" module="format"></wxs>
+<view class="wrapper">
+  <view class="player">
+    <video src="{{mvURLInfo.url}}"
+       danmu-list="{{danmuList}}"
+       wx:key="*this"
+       referrer-policy>
+    </video>
+  </view>
+  <view class="info">
+    <view class="name">{{mvDetail.name}}</view>
+    <view class="artisName">{{mvDetail.artistName}} -
+    </view>
+    <view class="playCount"> {{format.formatCount(mvDetail.playCount)}}次播放 - {{mvDetail.publishTime}}
+    </view>
+  </view>
+
+  <view>
+    <view class="tuijian">推荐视频</view>
+    <view wx:for="{{relatedVideos}}" 
+          wx:key="vid" 
+          class="relate">
+      <image src="{{item.coverUrl}}" class="image" mode="widthFix"></image>
+      <view class="title">{{item.title}}</view>
+    </view>
+  </view>
+</view>
+

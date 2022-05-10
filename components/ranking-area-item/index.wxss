@@ -1,0 +1,49 @@
+.wrapper {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	background-color: #e6e6e6;
+	margin-bottom: 20rpx;
+	border-radius: 10rpx;
+	overflow: hidden;
+}
+
+.wrapper .left-area {
+	width: 50%;
+	margin: 20rpx;
+}
+
+.wrapper .left-area .title {
+	font-size: 36rpx;
+	margin-bottom: 10rpx;
+}
+
+.wrapper .left-area .left-body {
+	font-size: 24rpx;
+	font-weight: 380;
+	padding: 10rpx 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.wrapper .right-area {
+	width: 38%;
+}
+
+.wrapper .right-area .image {
+	width: 100%;
+	vertical-align: top;
+}
+
+.wrapper .right-area .playcount {
+	position: absolute;
+	background-color: rgba(0, 0, 0, .5);
+	border-radius: 10rpx;
+	padding: 10rpx;
+	color: #fff;
+	font-size: 20rpx;
+	overflow: hidden;
+	bottom: 0rpx;
+	right: 0;
+}

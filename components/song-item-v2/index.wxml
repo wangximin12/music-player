@@ -1,0 +1,15 @@
+<view class="item" bindtap="handleSongItemClick"
+>
+  <view class="index">
+    <text>{{index}}</text>
+  </view>
+  <view class="info">
+    <view class="name">
+      {{item.name}}
+    </view>
+    <view class="source">
+      <image class="icon" src="/assets/images/icons/sq_icon.png" mode="widthFix"></image>
+      {{item.ar[0].name || item.artists[0].name}}  {{item.alia[0] || item.alias[0]}}
+    </view>
+  </view>
+</view>

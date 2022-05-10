@@ -1,0 +1,30 @@
+// 将个位数时间前加0
+function padLeftZero(time) {
+	time = time + ''
+	return ("00" + time).slice(time.length)
+}
+
+function formatCount(count) {
+	// 不支持ES6(let,const)
+	var counter = parseInt(count)
+	if (counter > 100000000) {
+		return (counter / 100000000).toFixed(1) + '亿'
+	}else if (counter > 10000) {
+		return (counter / 10000).toFixed(1) + '万'
+	}else {
+		return counter = ''
+	}
+}
+
+function formatDuration(duration) {
+	var duration = parseInt(duration) / 1000
+	var minute = Math.floor(duration / 60)
+	var second = Math.floor(duration) % 60
+	return padLeftZero(minute) + ":" + padLeftZero(second)
+}
+
+// 只能用commonjs方式导出 
+module.exports = {
+	formatCount: formatCount,
+	formatDuration: formatDuration
+}

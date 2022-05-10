@@ -1,0 +1,19 @@
+
+.menu-list{
+  white-space: nowrap;
+  /* 拿到屏幕视口宽度的第二种方案 */
+  width: 100vw;
+  position: relative;
+  left:-20rpx;
+  margin-bottom: 16rpx;
+}
+
+.menu-item {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20rpx;
+}
+
+.menu-item:last-child {
+  margin-right: 20rpx;
+}
